@@ -12,7 +12,16 @@ class DotEnv {
     public function app_begin( &$params )
     {
         $path =  dirname(APP_PATH);
-        $env_file = $path.'/.env';
+
+        // 自定义 .env
+        if (getenv('RUNTIME_ENVIRONMENT')) {
+            $env = '.'.getenv('RUNTIME_ENVIRONMENT'); 
+        } else {
+            $env = '.env';
+        }
+
+        $env_file = $path.'/'.$env;
+
         if (file_exists($env_file)) {
             $Loader = new Loader($env_file);
             $Loader->setFilters(['Snowair\Dotenv\DotArrayFilter'])
