@@ -14,6 +14,19 @@ dotenv 解决一套代码在多处部署时各处代码所用的环境变量及�
 
 2. 本地与线上环境配置肯定不同, 如果直接利用版本库部署代码到线上, 必须防止将本地配置推送到线上.
 
+3. 新增加入一个自定义的 .env
+
+``` php
+// 自定义 .env
+if (getenv('RUNTIME_ENVIRONMENT')) {
+   $env = '.'.getenv('RUNTIME_ENVIRONMENT'); 
+} else {
+   $env = '.env';
+}
+
+$env_file = $path.'/'.$env;
+```
+
 
 
 

@@ -1,6 +1,6 @@
 {
-  "name": "snowair/think-dotenv",
-  "description": "ThinkPHP3.2集成php-dotenv",
+  "name": "xiaoniuge/think-dotenv",
+  "description": "ThinkPHP3.2集成php-dotenv, 加入自定义 .env",
   "license": "apache",
   "authors": [
     {
