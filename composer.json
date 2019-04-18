@@ -1,7 +1,6 @@
 {
   "name": "xiaoniuge/think-dotenv",
   "description": "ThinkPHP3.2集成php-dotenv",
-  "license": "apache",
   "authors": [
     {
       "name": "朱亚杰",
