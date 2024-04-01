@@ -2,6 +2,7 @@
   "name": "xiaoniuge/think-dotenv",
   "description": "ThinkPHP3.2集成php-dotenv",
   "license": "Apache-2.0",
+  "type": "library",
   "authors": [
     {
       "name": "朱亚杰",
