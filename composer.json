@@ -23,6 +23,5 @@
       "Snowair\\Dotenv\\": "./"
     },
     "files": ["DotEnv.php"]
-  },
-  "minimum-stability": "dev"
+  }
 }
