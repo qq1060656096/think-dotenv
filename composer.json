@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Snowair\\Dotenv\\": "."
+      "Snowair\\Dotenv\\": "./"
     },
     "files": ["DotEnv.php"]
   },
